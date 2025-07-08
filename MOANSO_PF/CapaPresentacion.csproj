@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3C24CC1D-1208-48CD-BC3D-C21937972AC8}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>MOANSO_PF</RootNamespace>
+    <AssemblyName>MOANSO_PF</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ComprobanteVenta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ComprobanteVenta.Designer.cs">
+      <DependentUpon>ComprobanteVenta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Core.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Core.Designer.cs">
+      <DependentUpon>Core.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MantenedorBebida.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MantenedorBebida.Designer.cs">
+      <DependentUpon>MantenedorBebida.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MantenedorCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MantenedorCliente.Designer.cs">
+      <DependentUpon>MantenedorCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MantenedorEncargardoAlmacen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MantenedorEncargardoAlmacen.Designer.cs">
+      <DependentUpon>MantenedorEncargardoAlmacen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenedores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mantenedores.Designer.cs">
+      <DependentUpon>Mantenedores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MantenedorIngredientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MantenedorIngredientes.Designer.cs">
+      <DependentUpon>MantenedorIngredientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MantenedorInsumos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MantenedorInsumos.Designer.cs">
+      <DependentUpon>MantenedorInsumos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MantenedorMesero.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MantenedorMesero.Designer.cs">
+      <DependentUpon>MantenedorMesero.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MantenedorPlatillo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MantenedorPlatillo.Designer.cs">
+      <DependentUpon>MantenedorPlatillo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MantenedorProveedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MantenedorProveedor.Designer.cs">
+      <DependentUpon>MantenedorProveedor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MantenedorTipoPlatillo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MantenedorTipoPlatillo.Designer.cs">
+      <DependentUpon>MantenedorTipoPlatillo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OrdenPedido.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OrdenPedido.Designer.cs">
+      <DependentUpon>OrdenPedido.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RequerimientoInsumos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RequerimientoInsumos.Designer.cs">
+      <DependentUpon>RequerimientoInsumos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CompraInsumos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CompraInsumos.Designer.cs">
+      <DependentUpon>CompraInsumos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Restaurante.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Restaurante.Designer.cs">
+      <DependentUpon>Restaurante.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MantenedorTipoBebida.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MantenedorTipoBebida.Designer.cs">
+      <DependentUpon>MantenedorTipoBebida.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="ComprobanteVenta.resx">
+      <DependentUpon>ComprobanteVenta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core.resx">
+      <DependentUpon>Core.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MantenedorBebida.resx">
+      <DependentUpon>MantenedorBebida.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MantenedorCliente.resx">
+      <DependentUpon>MantenedorCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MantenedorEncargardoAlmacen.resx">
+      <DependentUpon>MantenedorEncargardoAlmacen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mantenedores.resx">
+      <DependentUpon>Mantenedores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MantenedorIngredientes.resx">
+      <DependentUpon>MantenedorIngredientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MantenedorInsumos.resx">
+      <DependentUpon>MantenedorInsumos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MantenedorMesero.resx">
+      <DependentUpon>MantenedorMesero.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MantenedorPlatillo.resx">
+      <DependentUpon>MantenedorPlatillo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MantenedorProveedor.resx">
+      <DependentUpon>MantenedorProveedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MantenedorTipoPlatillo.resx">
+      <DependentUpon>MantenedorTipoPlatillo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OrdenPedido.resx">
+      <DependentUpon>OrdenPedido.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="RequerimientoInsumos.resx">
+      <DependentUpon>RequerimientoInsumos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CompraInsumos.resx">
+      <DependentUpon>CompraInsumos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Restaurante.resx">
+      <DependentUpon>Restaurante.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MantenedorTipoBebida.resx">
+      <DependentUpon>MantenedorTipoBebida.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CapaEntidad\CapaEntidad.csproj">
+      <Project>{fc6b1de8-d85c-4509-99c4-cf199e18280d}</Project>
+      <Name>CapaEntidad</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CapaLogica\CapaLogica.csproj">
+      <Project>{a4c1c336-9695-4c77-ba3d-7aaf870754d5}</Project>
+      <Name>CapaLogica</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
